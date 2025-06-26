@@ -1,0 +1,345 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 120px;
+  height: 80px;
+  background-image: url("./assets/logo/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  background: url("assets/background-images/background-image.jpg");
+  background-position: bottom;
+  background-size: 115%;
+  background-attachment: fixed;
+  color: #222;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(186, 161, 209, 0.8);
+  backdrop-filter: saturate(180%) blur(10px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+header img {
+  height: 40px;
+  margin-right: 10px;
+}
+header h1 {
+  font-size: 1.8rem;
+  color: rgb(248, 170, 78);
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 160px 20px 100px;
+  color: #222;
+}
+.hero .hero-background-filter {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(33, 33, 33, 0.45);
+  backdrop-filter: blur(2.5px);
+}
+.hero .hero_text {
+  position: relative;
+  z-index: 2;
+}
+.hero .hero_text h2 {
+  font-size: 3.5rem;
+  color: #f6ad50;
+  font-weight: 700;
+}
+.hero .hero_text h3 {
+  font-size: 2.15rem;
+  color: #f7941e;
+  margin-top: 10px;
+}
+
+.section-title {
+  background-color: #fff3c2;
+  color: #d17900;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.section-title b {
+  font-size: 1.8rem;
+  color: #653b00;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  margin-bottom: 50px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+}
+.card .card__image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+.card .card__image img {
+  width: 30%;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+.card h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.model-blocks {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.model-blocks .model-block {
+  position: relative;
+  display: flex;
+  padding: 40px 20px;
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  margin: 20px;
+}
+.model-blocks .model-block .logo {
+  opacity: 50%;
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+.model-blocks .model-block .info-text {
+  margin-left: 2.5%;
+}
+.model-blocks .model-block img {
+  flex: 1 1 300px;
+  border-radius: 8px;
+}
+
+.info-text,
+.material__desc {
+  flex: 1 1 300px;
+}
+
+.diagram {
+  padding: 40px 20px;
+  text-align: center;
+}
+.diagram .diagram__text {
+  padding: 15px 10px;
+  border-radius: 15px;
+  background-color: #fff9f3;
+  text-align: justify;
+  width: 75%;
+  margin: 15px auto;
+}
+.diagram img {
+  border-radius: 8px;
+}
+
+.advantages {
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+.advantages .advantages__image img {
+  width: 100%;
+}
+.advantages .advantages__text {
+  margin-left: 45px;
+}
+.advantages h4 {
+  margin-bottom: 10px;
+}
+
+.material {
+  padding: 40px 25px;
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  margin: 20px auto;
+}
+.material .material__image {
+  margin: 15px auto;
+}
+.material .material__image img {
+  width: 100%;
+}
+.material .material__image2 {
+  margin: 15px auto;
+}
+.material .material__image2 img {
+  width: 100%;
+}
+.material .material__desc {
+  margin: 0 auto;
+}
+
+.community {
+  background-color: #e9f7f1;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 20px;
+}
+.community h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.community p {
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #f7941e;
+  color: #fff;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: #d97e15;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #222;
+  color: white;
+}
+
+@media (min-width: 861px) {
+  .advantages .advantages__image {
+    width: 15%;
+  }
+  .diagram .diagram__text {
+    font-size: 1.4rem;
+  }
+  .diagram img {
+    width: 60%;
+  }
+  .material {
+    width: 50%;
+  }
+  .material .material__desc {
+    width: 80%;
+  }
+  .material .material__image {
+    width: 60%;
+    margin: 15px auto;
+  }
+  .material .material__image img {
+    width: 100%;
+  }
+  .material .material__image2 {
+    width: 30%;
+    margin: 15px auto;
+  }
+  .material .material__image2 img {
+    width: 100%;
+  }
+  .model-block {
+    width: 45%;
+  }
+  .model-block img {
+    flex: 1 1 300px;
+    max-width: 40%;
+  }
+  .features {
+    padding: 40px 100px;
+  }
+  .card {
+    width: 30%;
+  }
+}
+@media (max-width: 860px) {
+  .advantages .advantages__image {
+    width: 45%;
+  }
+  .diagram .diagram__text {
+    font-size: 1rem;
+  }
+  .diagram img {
+    width: 80%;
+  }
+  .material {
+    width: 100%;
+  }
+  .material .material__desc {
+    width: 100%;
+  }
+  .material .material__image {
+    width: 100%;
+    margin: 15px auto;
+  }
+  .material .material__image img {
+    width: 100%;
+  }
+  .material .material__image2 {
+    width: 60%;
+    margin: 15px auto;
+  }
+  .material .material__image2 img {
+    width: 100%;
+  }
+  .model-block {
+    width: 100%;
+  }
+  .model-block img {
+    flex: 1 1 300px;
+    max-width: 50%;
+  }
+  .features {
+    padding: 40px 10px;
+  }
+  .card {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
