@@ -23,9 +23,8 @@ html {
 body {
   font-family: "Inter", sans-serif;
   line-height: 1.6;
-  background: url("assets/background-images/background-image.jpg");
+  background-image: url("assets/background-images/background-image.jpg");
   background-position: bottom;
-  background-size: 115%;
   background-attachment: fixed;
   color: #222;
 }
@@ -254,6 +253,9 @@ footer {
 }
 
 @media (min-width: 1081px) {
+  body {
+    background-size: 115%;
+  }
   .advantages .advantages__image {
     width: 15%;
   }
@@ -298,6 +300,9 @@ footer {
   }
 }
 @media (max-width: 1080px) {
+  body {
+    background-size: cover;
+  }
   .advantages .advantages__image {
     width: 45%;
   }
