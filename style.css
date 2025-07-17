@@ -72,7 +72,6 @@ header h1 {
   z-index: 2;
 }
 .hero .hero_text h2 {
-  font-size: 3.5rem;
   color: #f6ad50;
   font-weight: 700;
 }
@@ -138,7 +137,6 @@ header h1 {
   padding: 40px 20px;
   background-color: #f7f7f7;
   border-radius: 12px;
-  margin: 20px;
 }
 .model-blocks .model-block .logo {
   opacity: 25%;
@@ -168,7 +166,6 @@ header h1 {
   border-radius: 15px;
   background-color: #fff9f3;
   text-align: justify;
-  width: 75%;
   margin: 15px auto;
 }
 .diagram img {
@@ -252,7 +249,74 @@ footer {
   color: white;
 }
 
+.additional-contacts {
+  background-color: white;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+.additional-contacts hr {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+.additional-contacts h2 {
+  text-align: center;
+  margin-bottom: 5vh;
+}
+.additional-contacts .customers {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.additional-contacts .customers .customers_item {
+  padding: 5px;
+  transition: transform 0.2s ease;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+.additional-contacts .customers .customers_item:hover {
+  transform: scale(1.05);
+}
+.additional-contacts .customers .customers_item img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+}
+.additional-contacts .suppliers {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.additional-contacts .suppliers .suppliers_item {
+  padding: 5px;
+  transition: transform 0.2s ease;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+.additional-contacts .suppliers .suppliers_item:hover {
+  transform: scale(1.05);
+}
+.additional-contacts .suppliers .suppliers_item img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+}
+
 @media (min-width: 1081px) {
+  .customers {
+    width: 80%;
+  }
+  .customers .customers_item {
+    width: 20%;
+  }
+  .suppliers {
+    width: 80%;
+  }
+  .suppliers .suppliers_item {
+    width: 20%;
+  }
+  .hero_text h2 {
+    font-size: 3.5rem;
+  }
   body {
     background-size: 115%;
   }
@@ -260,6 +324,7 @@ footer {
     width: 15%;
   }
   .diagram .diagram__text {
+    width: 80%;
     font-size: 1.4rem;
   }
   .diagram img {
@@ -287,6 +352,7 @@ footer {
   }
   .model-block {
     width: 45%;
+    margin: 20px;
   }
   .model-block img {
     flex: 1 1 300px;
@@ -300,6 +366,21 @@ footer {
   }
 }
 @media (max-width: 1080px) {
+  .customers {
+    width: 100%;
+  }
+  .customers .customers_item {
+    width: 30%;
+  }
+  .suppliers {
+    width: 100%;
+  }
+  .suppliers .suppliers_item {
+    width: 30%;
+  }
+  .hero_text h2 {
+    font-size: 2.8rem;
+  }
   body {
     background-size: cover;
   }
@@ -308,9 +389,10 @@ footer {
   }
   .diagram .diagram__text {
     font-size: 1rem;
+    width: 100%;
   }
   .diagram img {
-    width: 80%;
+    width: 100%;
   }
   .material {
     width: 100%;
@@ -334,6 +416,7 @@ footer {
   }
   .model-block {
     width: 100%;
+    margin: 10px;
   }
   .model-block img {
     flex: 1 1 300px;

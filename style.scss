@@ -75,7 +75,6 @@ header {
     z-index: 2;
 
     h2 {
-      font-size: 3.5rem;
       color: #f6ad50;
       font-weight: 700;
     }
@@ -148,7 +147,7 @@ header {
   .model-block {
     position: relative;
 
-    .logo{
+    .logo {
       opacity: 25%;
       position: absolute;
       top: 5px;
@@ -163,7 +162,6 @@ header {
     padding: 40px 20px;
     background-color: #f7f7f7;
     border-radius: 12px;
-    margin: 20px;
 
     img {
       flex: 1 1 300px;
@@ -186,7 +184,6 @@ header {
     border-radius: 15px;
     background-color: #fff9f3;
     text-align: justify;
-    width: 75%;
     margin: 15px auto;
   }
 
@@ -285,8 +282,91 @@ footer {
   color: white;
 }
 
+.additional-contacts {
+  background-color: white;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+
+  hr {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+
+  .customers {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+
+    .customers_item {
+      padding: 5px;
+      transition: transform 0.2s ease;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  .suppliers {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+
+    .suppliers_item {
+      padding: 5px;
+      transition: transform 0.2s ease;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
 @media (min-width: 1081px) {
-  body{
+  .customers {
+    width: 80%;
+
+    .customers_item {
+      width: 20%;
+    }
+  }
+  .suppliers {
+    width: 80%;
+
+    .suppliers_item {
+      width: 20%;
+    }
+  }
+
+  .hero_text {
+    h2 {
+      font-size: 3.5rem;
+    }
+  }
+
+  body {
     background-size: 115%;
   }
 
@@ -298,6 +378,7 @@ footer {
 
   .diagram {
     .diagram__text {
+      width: 80%;
       font-size: 1.4rem;
     }
 
@@ -333,6 +414,7 @@ footer {
 
   .model-block {
     width: 45%;
+    margin: 20px;
 
     img {
       flex: 1 1 300px;
@@ -348,8 +430,28 @@ footer {
 }
 
 @media (max-width: 1080px) {
+  .customers {
+    width: 100%;
 
-  body{
+    .customers_item{
+      width: 30%;
+    }
+  }
+  .suppliers {
+    width: 100%;
+
+    .suppliers_item {
+      width: 30%;
+    }
+  }
+
+  .hero_text {
+    h2 {
+      font-size: 2.8rem;
+    }
+  }
+
+  body {
     background-size: cover;
   }
 
@@ -362,10 +464,11 @@ footer {
   .diagram {
     .diagram__text {
       font-size: 1rem;
+      width: 100%;
     }
 
     img {
-      width: 80%;
+      width: 100%;
     }
   }
   .material {
@@ -396,6 +499,7 @@ footer {
 
   .model-block {
     width: 100%;
+    margin: 10px;
 
     img {
       flex: 1 1 300px;
